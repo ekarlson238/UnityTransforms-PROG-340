@@ -5,7 +5,7 @@ using UnityEngine;
 public class TranslateEditor : MonoBehaviour
 {
     [SerializeField]
-    private int buttonValue;
+    private float buttonValue;
 
     private GameObject myCube;
 
@@ -16,5 +16,13 @@ public class TranslateEditor : MonoBehaviour
             myCube = GameObject.FindWithTag("Cube");
     }
 
-    
+    public void TranslateForward()
+    {
+        myCube.transform.Translate(Vector3.forward * buttonValue);
+    }
+
+    public void TranslateBack()
+    {
+        myCube.transform.Translate(Vector3.back * buttonValue);
+    }
 }

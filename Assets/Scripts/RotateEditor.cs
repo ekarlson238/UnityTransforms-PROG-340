@@ -5,7 +5,7 @@ using UnityEngine;
 public class RotateEditor : MonoBehaviour
 {
     [SerializeField]
-    private int buttonValue = 100;
+    private float buttonValue = 100;
 
     private GameObject myCube;
 
